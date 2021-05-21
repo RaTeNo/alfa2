@@ -1,0 +1,547 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .block_data > .head
+    {
+        margin-bottom: 20px;
+    }
+
+    .block_data > .head .mob_sep
+    {
+        display: block;
+    }
+
+    .block_data > .head .sort
+    {
+        width: calc(100% - 131px);
+        margin-left: 15px;
+    }
+
+
+    .block_data > .head .tabs
+    {
+        width: calc(100% + 5px);
+        margin-top: 10px;
+        margin-left: -5px;
+    }
+
+
+
+    .block_data .empty
+    {
+        padding: 20px;
+    }
+
+    .block_data .empty > .icon > *
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .block_data .empty .title
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        margin-bottom: 30px;
+        padding: 10px 0 15px;
+    }
+
+
+    header .logo
+    {
+        font-size: 22px;
+        line-height: 24px;
+
+        margin-right: auto;
+    }
+
+
+    header .langs
+    {
+        margin-right: 0;
+    }
+
+
+    header .balance
+    {
+        line-height: 18px;
+
+        margin-left: 30px;
+
+        text-align: right;
+    }
+
+    header .balance b
+    {
+        font-size: 18px;
+        line-height: 18px;
+
+        display: block;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .service .field
+    {
+        margin-bottom: -20px;
+        margin-left: -25px;
+    }
+
+    .form .service .field > *
+    {
+        max-width: calc(100% - 25px);
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+
+    .form .service .title
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        margin-bottom: 15px;
+    }
+
+    .form .service label img
+    {
+        width: 32px;
+        height: 32px;
+    }
+    .form .service .field {
+        justify-content: center;
+    }
+
+
+    .form .file
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .row
+    {
+        margin-bottom: -10px;
+    }
+
+    .stats .row > *
+    {
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+
+
+
+    /*---------------
+        Companies
+    ---------------*/
+    .companies table td
+    {
+        width: 50%;
+    }
+
+    .companies_item-condition {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .companies_item-date {
+        margin-bottom: 8px;
+    }
+    .companies_item-pricing:last-child {
+        margin-right: 15px;
+    }
+    .companies_item-limit {
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+    .companies_item {
+        padding: 15px;
+    }
+    .companies_item-info {
+        margin-left: 10px;
+    }
+    
+
+
+
+
+    /*---------------------------
+        Balance_replenishment
+    ---------------------------*/
+    .balance_replenishment .block_head .title
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .balance_replenishment .block_head .title + .btn
+    {
+        margin-left: 0;
+    }
+
+
+    .balance_replenishment .col_left
+    {
+        width: 100%;
+    }
+
+    .balance_replenishment .col_right
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+    .balance_replenishment .logos img {
+        margin-bottom: 40px;
+    }
+
+    .balance_replenishment .balance
+    {
+        margin-bottom: 20px;
+    }
+    .balance_replenishment .block_data {
+        padding: 15px;
+    }
+
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth
+    {
+        padding: 25px 0;
+    }
+
+    .auth .title
+    {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+
+
+    /*--------------
+        Settings
+    --------------*/
+    .settings .block_head .title
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .settings .block_head .title + .btn
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Support
+    -------------*/
+    .support .block_head .title
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .support .block_head .title + .btn
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Company info
+    ------------------*/
+    .company_info .block_head .title
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .company_info .block_head .title + .btn
+    {
+        margin-left: 0;
+    }
+
+
+    .company_info .head
+    {
+        margin-bottom: 15px;
+        margin-left: -10px;
+    }
+
+    .company_info .head .service
+    {
+        width: calc(100% + 10px);
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .company_info .head .btn
+    {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .company_info .limit {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .company_info table.folds
+    {
+        display: block;
+    }
+
+    .company_info table.folds tbody
+    {
+        display: block;
+
+        border-radius: 7px;
+        background: #edf2f7;
+    }
+
+    .company_info table.folds tr
+    {
+        display: block;
+
+        padding: 15px 20px;
+    }
+
+    .company_info table.folds tr + tr
+    {
+        border-top: 1px solid #cad4de;
+    }
+
+    .company_info table.folds td
+    {
+        display: block;
+
+        width: 100%;
+        padding: 0;
+    }
+
+    .company_info table.folds tbody tr:nth-child(odd) td
+    {
+        background: none;
+    }
+
+    .company_info table.folds td.val
+    {
+        margin-top: 5px;
+
+        text-align: left;
+        white-space: normal;
+    }
+
+    .company_info table.folds td.val br
+    {
+        display: none;
+    }
+
+    .company_info table.folds td.val.multiline
+    {
+        width: 100%;
+    }
+
+    .company_info table.folds td.tags
+    {
+        width: calc(100% + 5px);
+        margin-bottom: -5px;
+        margin-left: -5px;
+    }
+
+    .company_info table.folds td.tags > *
+    {
+        max-width: calc(100% - 5px);
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+
+
+
+    .company_info .ad_preview
+    {
+        padding: 20px;
+    }
+
+    .company_info .ad_preview > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .company_info .ad_preview  .gallery
+    {
+        margin-bottom: -10px;
+    }
+
+    .company_info .ad_preview  .gallery > *
+    {
+        margin-bottom: 10px;
+    }
+    .company_info .blocks.row {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .company_info .limit {
+        width: 100%;
+    }
+
+    .company_info .ad_preview .article .title
+    {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .company_info .ad_preview .article .path
+    {
+        margin-top: 5px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion .item .head
+    {
+        padding: 12px 12px 12px 20px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: -5px;
+        margin-left: -5px;
+    }
+
+    .tabs button,
+    .tabs button + button
+    {
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo
+    {
+        width: 100%;
+        margin-bottom: 20px;
+
+        justify-content: center;
+    }
+
+
+    footer .phone,
+    footer .email
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    footer .copyright,
+    footer .privacy_ploicy
+    {
+        width: 100%;
+        margin-top: 10px;
+
+        text-align: center;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 20px;
+    }
+
+
+    .modal
+    {
+        padding: 40px 25px 25px;
+    }
+
+    .modal .logo
+    {
+        margin-bottom: 25px;
+    }
+
+    .modal_title
+    {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .modal_desc
+    {
+        line-height: 22px;
+    }
+
+
+
+    #edit_company_modal .modal_title
+    {
+        margin-bottom: 25px;
+    }
+    
+}

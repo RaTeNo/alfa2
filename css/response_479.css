@@ -1,0 +1,464 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 22px;
+    }
+
+
+    .block_data > .head .sort
+    {
+        width: calc(100% - 117px);
+    }
+
+
+
+    .block_data .chart
+    {
+        width: calc(100% + 43px);
+        height: 200px;
+        margin: 0 -15px -15px -28px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo
+    {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    header .logo img
+    {
+        width: 33px;
+    }
+
+
+    header .btn
+    {
+        margin-left: 0;
+    }
+
+
+
+    header .balance
+    {
+        margin-left: 15px;
+    }
+
+    header .balance b
+    {
+        font-size: 16px;
+        line-height: 16px;
+
+        display: block;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of3,
+    .form .columns > *.width2of3
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .service .field
+    {
+        margin-bottom: -15px;
+        margin-left: -20px;
+    }
+
+    .form .service .field > *
+    {
+        max-width: calc(100% - 20px);
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+
+
+    .form .file label
+    {
+        width: 148px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        padding: 15px 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*---------------
+        Companies
+    ---------------*/
+    .companies table td
+    {
+        width: 100%;
+        padding: 36px 15px 15px;
+    }
+
+    .companies table td:before
+    {
+        padding: 0 15px;
+    }
+
+
+    .companies_item {
+        flex-direction: column;
+    }
+    .companies_item-condition {
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: flex-end;
+       margin-bottom: 15px;
+    }
+    .companies_item-limit {
+        flex-direction: row;
+    }
+    .companies_item-logo img {
+        width: 37px;
+        height: 37px;
+    }
+    .companies_item-pricing:first-child {
+        margin-right: 15px;
+    }
+    .companies_item-pricing:last-child {
+        margin-right: 0px;
+    }
+    .companies_item-name {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .companies_item-limit {
+        margin-left: 0px;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    .block_data > .head .refresh_btn {
+        margin-right: auto;
+        margin-left: 0;
+    }
+   
+
+
+
+
+
+
+    /*------------
+        Dialog
+    ------------*/
+    .dialog .messages .message .text_block
+    {
+        line-height: 18px;
+
+        padding: 15px;
+    }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth .data
+    {
+        padding: 30px 25px 30px;
+    }
+
+    .auth .logo
+    {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+
+
+    /*--------------
+        Settings
+    --------------*/
+    .settings .info
+    {
+        line-height: 20px;
+    }
+
+    .settings .info .val
+    {
+        width: 100%;
+        margin: 2px 0 0;
+    }
+
+
+
+    /*------------------
+        Company info
+    ------------------*/
+    .company_info table.folds tr
+    {
+        padding: 15px;
+    }
+
+
+    .company_info .ad_preview
+    {
+        padding: 0;
+    }
+
+
+
+    /*------------
+        Button
+    ------------*/
+    .btn
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        height: 36px;
+        padding: 0 7px 0 7px;
+    }
+
+    .btn.circle
+    {
+        width: 36px;
+    }
+
+    .btn .icon
+    {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+
+    .btn.support_btn .icon
+    {
+        width: 16px;
+        height: 17px;
+    }
+
+    .btn.logout_btn .icon
+    {
+        width: 16px;
+        height: 17px;
+    }
+
+    .btn.refresh_btn .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+    .btn.save_btn .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+    .btn.file_btn .icon
+    {
+        width: 11px;
+        height: 18px;
+    }
+
+    .btn.edit_btn .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+
+    /*-----------
+        Langs
+    -----------*/
+    .langs .nice-select .current img
+    {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+
+    .langs .nice-select .current
+    {
+        font-size: 10px;
+        line-height: 16px;
+
+        height: 26px;
+        padding: 0 28px 0 4px;
+    }
+
+    .langs .nice-select .current:after
+    {
+        top: -5px;
+        right: 10px;
+
+        width: 7px;
+        height: 7px;
+
+        border-bottom: 1px solid #bbb;
+        border-left: 1px solid #bbb;
+    }
+
+
+    .langs .nice-select .list .list_item
+    {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .langs .nice-select .list .list_item img
+    {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .phone
+    {
+        margin-left: 0;
+    }
+
+    footer .email
+    {
+        margin-right: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 35px 20px 20px;
+    }
+
+    .company_info .ad_preview  .gallery .last-row{
+        width: 100% !important;
+    }
+
+    .company_info .ad_preview .example8, .company_info .ad_preview .example9{
+        padding: 0 20px;
+    }
+
+    .company_info .ad_preview{
+        padding-bottom:20px;
+    }
+
+    .form .file .field{
+    	flex-wrap: wrap;
+    }
+
+    .form .file .selected{
+    	margin-top:20px;
+    }
+    .price-link a {
+        font-size: 13px;
+    }
+    .settings .limit .val {
+        font-size: 20px;
+    }
+    .balance_replenishment .logos {
+        margin-top: 20px;
+    }
+    .balance_replenishment .form .field {
+        display: block;
+        width: 100%;
+    }
+    .balance_replenishment .form .field .pay_btn {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .balance_replenishment .form .field .input {
+        width: 100%;
+    }
+    .main_slider .slider_item {
+       width: 200px;
+    }
+
+    .main_slider {
+        overflow: visible !important;
+    }
+
+    .main_slider {
+        width: 200px;
+        padding: 0;
+    }
+    .main_slider .owl-item.active ~ .owl-item {
+        visibility: visible;
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .main_slider .owl-stage-outer{
+        overflow:visible;
+    }
+    .main_slider  .owl-item{
+            visibility: visible;
+        pointer-events: auto;
+        opacity: 1;
+    }
+    .modal_advantages-desc {
+        margin: 10px auto;
+    }
+    .modal_advantages-title {
+        font-size: 24px;
+        margin: 18px auto 12px;
+    }
+
+    .deposit_btn {
+
+    }
+
+    header .langs{
+        display: none;
+    }
+
+    .faq_btn{
+        display: none;
+    }
+}
