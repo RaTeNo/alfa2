@@ -5,7 +5,7 @@
     -------------------*/
     :root
     {
-        --font_size_title: 22px;
+        --font_size_title: 24px;
     }
 
 
@@ -14,7 +14,9 @@
         width: calc(100% - 117px);
     }
 
-
+    .cont {
+        padding: 0 16px;
+    }
 
     .block_data .chart
     {
@@ -143,19 +145,20 @@
 
     .companies_item {
         flex-direction: column;
+        position: relative;
     }
     .companies_item-condition {
-       flex-direction: row;
-       justify-content: space-around;
-       align-items: flex-end;
-       margin-bottom: 15px;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 6px;
+        padding-left: 59px;
     }
     .companies_item-limit {
         flex-direction: row;
     }
     .companies_item-logo img {
-        width: 37px;
-        height: 37px;
+        width: 49px;
+        height: 49px;
     }
     .companies_item-pricing:first-child {
         margin-right: 15px;
@@ -164,18 +167,21 @@
         margin-right: 0px;
     }
     .companies_item-name {
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        padding-left: 59px;
     }
     .companies_item-limit {
-        margin-left: 0px;
-        margin-bottom: 15px;
-        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 5px;
+        margin-right: auto;
     }
     .block_data > .head .refresh_btn {
         margin-right: auto;
         margin-left: 0;
+    }
+    .companies_item-status img {
+        width: 17px;
+        height: 17px;
     }
    
 
@@ -249,16 +255,16 @@
     ------------*/
     .btn
     {
-        font-size: 13px;
-        line-height: 22px;
+        font-size: 11px;
+        line-height: 19px;
 
-        height: 36px;
+        height: 30px;
         padding: 0 7px 0 7px;
     }
 
     .btn.circle
     {
-        width: 36px;
+        width: 30px;
     }
 
     .btn .icon
@@ -396,13 +402,14 @@
     	margin-top:20px;
     }
     .price-link a {
-        font-size: 13px;
+        font-size: 14px;
     }
     .settings .limit .val {
         font-size: 20px;
     }
     .balance_replenishment .logos {
-        margin-top: 20px;
+        margin-top: 50px;
+        justify-content: center;
     }
     .balance_replenishment .form .field {
         display: block;
@@ -412,6 +419,8 @@
         margin-left: 0;
         margin-top: 15px;
         width: 100%;
+        top: 86px;
+        position: absolute;
     }
     .balance_replenishment .form .field .input {
         width: 100%;
@@ -419,10 +428,22 @@
     .main_slider .slider_item {
        width: 200px;
     }
-
+    .main_slider .slider_item {
+        padding: 11px;
+        border-radius: 16px;
+    }
+    .slider_item-text {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 15px;
+    }
     .main_slider {
         overflow: visible !important;
     }
+    .main_slider .slider_item-bg1 {
+        padding: 50px 16px 16px 16px !important;
+    }
+
 
     .main_slider {
         width: 200px;
@@ -438,7 +459,7 @@
         overflow:visible;
     }
     .main_slider  .owl-item{
-            visibility: visible;
+        visibility: visible;
         pointer-events: auto;
         opacity: 1;
     }
@@ -449,16 +470,202 @@
         font-size: 24px;
         margin: 18px auto 12px;
     }
-
-    .deposit_btn {
-
+    
+    .stats .item {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 16px;
     }
-
-    header .langs{
+    .stats .item .val {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .stats .item .icon {
+        width: 42px;
+        height: 42px; 
+        right: 16px;
+        top: 15px;
+    }  
+    .stats .row {
+        margin-bottom: -30px;
+    }
+    .block_data > .head {
+        margin-bottom: 12px;
+    }
+    .block .add_btn.btn_circle {
+        width: 34px;
+        height: 34px;
+    }
+    .block .block_data > .head .add_btn {
+        margin-left: auto;
+    }
+    .block .btn_circle span {
+        font-size: 34px;
+    }
+    .block .block_data > .head .refresh_btn {
         display: none;
     }
-
-    .faq_btn{
-        display: none;
+    .block_data .block_title {
+        font-size: 24px;
+        line-height: 29px;
     }
+    .companies_item-action a {
+        width: 100%;
+        text-align: center;
+    }
+    .companies_item-action {
+        width: 100%;
+    }
+    .companies_item {
+        padding: 16px;
+        margin-bottom: 18px;
+    }
+    .companies_item-logo {
+        position: absolute;
+        top: 19px;
+        left: 16px;
+    }
+    .companies_item-price {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .companies_item-action a {
+        font-size: 11px;
+        line-height: 19px;
+        border-radius: 6px;
+    }
+    .balance_replenishment .logos img {
+        margin-bottom: 20px;
+        width: 28%;
+        margin-left: 16px;
+    }
+    .balance_replenishment .balance-price {
+        line-height: 27px;
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .balance_replenishment .balance {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 2px;
+    }
+    .balance_replenishment .form .label {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 6px;
+    }
+    .balance_replenishment .text_block > *{
+        margin-bottom: 16px;
+    }
+    .folds_description-icon {
+        width: 55px;
+        height: 55px;
+    }
+    .folds_description-icon img {
+        width: 100%;
+        height: 100%;
+    }
+    .company_info .folds_description-text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .company_info .folds_description-info .date {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .company_info .folds_description {
+        padding: 16px 16px 20px 16px;
+    }
+    .company_info .block_head .title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 16px;
+    }
+    .company_info .back_btn {
+        width: calc(50% - 9px);
+    }
+    .company_info .refresh_btn {
+        width: calc(50% - 9px);        
+    }
+
+    .company_info .block_head {
+        margin-bottom: 16px;
+        justify-content: space-between;
+    }
+    .company_info .folds_description-info .work {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .block_head .btn {
+        margin-left: 0px;
+    }
+    .dialog .back_btn {
+        width: 167px;
+    }
+    .dialog .messages .message .text_block {
+        font-size: 12px;
+        line-height: 19px;
+        letter-spacing: 0.24px;
+        color: #FFFFFF;
+        padding: 5px 11px;
+        border-radius: 10px;
+    }
+    .dialog .messages .message.my .text_block {
+        font-size: 12px;
+        line-height: 19px;
+        letter-spacing: 0.24px;
+        border-radius: 12px;
+        padding: 8px 6px 8px 12px;
+    }
+    .dialog .text_block > *, .text_block .hide > * {
+        margin-bottom: 8px;
+    }
+    .dialog .text_block a {
+        font-weight: 700;
+    }
+    .dialog .add_message .form textarea {
+        height: 34px;
+        font-size: 11px;
+        line-height: 11px;
+    }
+    .block_head {
+        margin-bottom: 16px;
+    }
+
+    .tabs button
+	{
+	    height: 26px;
+	    font-weight: 700;
+	    font-size: 12px;
+	    line-height: 15px;
+	    color: #A4A4B3;
+	    padding: 6px 9px;
+	    border-radius: 7px;
+	}
+
+	.tabs button, 
+	.tabs button + button {
+	    margin-left: 9px;
+	    margin-bottom: 8px;
+	}
+	.tabs button:hover,
+	.tabs button.active
+	{
+	    color: #fff;
+	    background: linear-gradient(225deg, #2084FF 0%, #0052D4 100%);
+	}
+
+
+
+	header .langs{
+	    display: none;
+	}
+
+	.support .block_head .title + .btn{
+		margin-right: 20px;
+	}
+
+
 }

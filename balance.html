@@ -91,130 +91,30 @@
 				</header>
 
 
-				<section class="settings block">
+				<section class="balance_replenishment block">
 					<div class="cont">
 
 						<div class="block_head">
-							<div class="title">Настройки профиля</div>
-
-							<button class="save_btn btn">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_save"></use></svg>
-								<span>Сохранить изменения</span>
-							</button>
-
-							<a href="/" class="back_btn btn">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_back"></use></svg>
-								<span>На главную</span>
-							</a>
+							<div class="title">Пополнение баланса</div>
 						</div>
 
 						<div class="block_data">
-							<form action="" class="form">
-								<div class="columns row">
-									<div class="line width1of3">
-										<div class="label">Ваше имя</div>
-
+							<div class="col_left">
+								<div class="balance">Баланс</div> 
+								<div class="balance-price">7 579 357.00 ₽</div>
+								<form action="" class="form">
+									<div class="line">
+										<div class="label">Пополнить</div>
+										<div class="exp">Что бы пополнить баланс, вам нужно перейти в настройки и заполнить данные о стране, городе и адресе вашего проживания</div>
 										<div class="field">
-											<input type="text" name="" value="" class="input" placeholder="Иван Петрович">
-										</div>
+
+											<button class="balance_btn btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+												<span>Перейти в настройки</span>
+											</button>																				
 									</div>
-
-									<div class="line width1of3">
-										<div class="label">E-Mail</div>
-
-										<div class="field">
-											<input type="email" name="" value="" class="input" placeholder="Введите E-Mail">
-										</div>
-									</div>
-
-									<div class="line width1of3">
-										<div class="label">Телефон</div>
-
-										<div class="field">
-											<input type="tel" name="" value="" class="input" placeholder="+7(999)123-12-13">
-										</div>
-									</div>
-
-									<div class="line width1of3">
-										<div class="label">Страна</div>
-
-										<div class="field">
-											<select disabled name="" id="">
-												<option value="">Россия</option>
-												<option value="">Россия</option>
-												<option value="">Россия</option>
-											</select>
-											
-										</div>
-									</div>
-
-									<div class="line width1of3">
-										<div class="label">Город</div>
-
-										<div class="field">
-											<input type="text" name="" disabled value="" class="input" placeholder="Москва">
-										</div>
-									</div>
-
-									<div class="line width1of3">
-										<div class="label">Сфера деятельности</div>
-
-										<div class="field">
-											<input type="text" name="" value="" class="input" placeholder="Иван Петрович">
-										</div>
-									</div>
-
-									<div class="line width3of3">
-										<div class="label">Адрес</div>
-
-										<div class="field">
-											<input type="text" name="" value="" class="input" placeholder="проспект Кутузовский, дом 17, строение 3, квартира 147">
-										</div>
-									</div>
-
-									<div class="line width1of3">
-										<div class="label">Новый пароль</div>
-
-										<div class="field">
-											<input type="password" id="password-input" name="" value="" class="input" placeholder="Значение поля">
-											<a href="#" class="password-control"></a>
-										</div>
-									</div>
-
-									<div class="line width1of3">
-										<div class="label">Подтвердите пароль</div>
-
-										<div class="field">
-											<input type="password" id="password-input2" name="" value="" class="input" placeholder="Значение поля">
-											<a href="#" class="password-control2"></a>
-										</div>
-									</div>
-
-									<div class="line width1of3">
-										<div class="label">Часовой пояс</div>
-
-										<div class="field">
-											<select name="" id="">
-												<option value="">+3:00 Moscow</option>
-												<option value="">+3:00 Moscow</option>
-												<option value="">+3:00 Moscow</option>
-											</select>
-											
-										</div>
-									</div>
-								</div>
-							</form>
-
-							<div class="limits">
-								<div class="limit">
-									<div class="val">3000.50 ₽</div>
-									<div class="info">Дневной лимит аккаунта</div>
-								</div>	
-								<div class="limit">
-									<div class="val">-3000.50 ₽</div>
-									<div class="info">Кредитный лимит аккаунта</div>	
-								</div>		
-							</div>													
+								</form>
+							</div>						
 						</div>
 					</div>
 				</section>
@@ -258,21 +158,6 @@
 
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
-		</div>
-
-
-		<div class="notifications">
-			<div class="notification success">
-				<button class="close"></button>
-				<svg class="icon"><use xlink:href="images/sprite.svg#ic_success"></use></svg>
-				<div>Ваши данные успешно сохранены</div>
-			</div>
-
-			<div class="notification error">
-				<button class="close"></button>
-				<svg class="icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
-				<div>Error! Ахтунг! Ошибка! </div>
-			</div>
 		</div>
 
 
@@ -352,6 +237,24 @@
 					</div>
 				</form>
 			</div>
+		</section>
+
+
+		<section class="modal2" id="">
+			<div class="modal_img">
+				<img src="images/modal_ok.svg" alt="">
+			</div>
+			<div class="modal2_title">Успех!</div>
+			<div class="modal2_desc">Пароль успешно изменен. Спасибо! Пожалуйста!</div>
+		</section>
+
+
+		<section class="modal3" id="">
+			<div class="modal_img">
+				<img src="images/modal_no.svg" alt="">
+			</div>
+			<div class="modal2_title">Ошибка!</div>
+			<div class="modal2_desc">Что то пошло не так! Попробуйте еще раз через некоторое время!</div>
 		</section>
 
 

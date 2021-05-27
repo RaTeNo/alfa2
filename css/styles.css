@@ -626,19 +626,19 @@ button
 
 .block_data .table_wrap::-webkit-scrollbar
 {
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
 
-    border-radius: 0;
-    background-color: #eee;
+    border-radius: 3px;
+    background-color: #E7E9F5;
 
     -webkit-appearance: none;
 }
 
 .block_data .table_wrap::-webkit-scrollbar-thumb
 {
-    border-radius: 0;
-    background-color: #030aac;
+    background: linear-gradient(225deg, #2084FF 0%, #0052D4 100%);
+    border-radius: 3px;
 }
 
 .block_data table
@@ -945,7 +945,7 @@ button
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-	right: 7px;
+	right: 11px;
 	display: inline-block;
 	width: 15px;
 	height: 12px;
@@ -959,7 +959,7 @@ button
     position: absolute;
 	top: 50%;
     transform: translateY(-50%);
-	right: 7px;
+	right: 11px;
 	display: inline-block;
 	width: 15px;
 	height: 12px;
@@ -1456,7 +1456,8 @@ header .btn
 }
 .main_slider .slider_item-bg1 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.755436) 69.15%), url(../images/slider_item.png);
-    padding: 57px 15px 19px 15px;     
+    padding: 57px 15px 19px 15px;  
+    background-repeat: no-repeat;   
 }
 .main_slider .slider_item-bg2 {
     background: linear-gradient(135deg, #F87171 0%, #EA3C7F 100%);
@@ -1549,7 +1550,6 @@ header .btn
     margin-bottom: 17px;
 }
 
-
 .form .label
 {
     font-weight: 800;
@@ -1614,12 +1614,16 @@ header .btn
 }
 
 
-.form .input:disabled,
+.form .input:disabled, .form select:disabled, .form .nice-select.disabled .current, 
 .form textarea:disabled
 {
     pointer-events: none;
     background: #F4F4F4 !important;
     opacity: .52;
+}
+
+.form .nice-select.disabled{
+        pointer-events: none;
 }
 
 .form .input:focus,
@@ -1830,7 +1834,7 @@ header .btn
     padding: 14px;
     flex-direction: column;
     position: relative;
-    width: 158px;
+    width: 105px;
     box-shadow: 0px 3px 28px rgb(148 155 195 / 15%);
     border-radius: 17.7497px;
 }
@@ -1879,7 +1883,7 @@ header .btn
     opacity: 1;
 }
 .form .service input[type=radio]:checked + label {
-    width: 158px;
+    width: 105px;
     right: 0px;
     border: 3px solid #4ACB42;
     box-shadow: 0px 3px 28px rgb(148 155 195 / 15%);
@@ -1956,6 +1960,7 @@ header .btn
     width: 175px;
 
     flex-wrap: nowrap;
+    cursor: pointer;
 }
 
 .form .file .selected
@@ -2058,21 +2063,21 @@ header .btn
 .form .nice-select .current:after
 {
     position: absolute;
-    top: -6px;
+    top: 0;
     right: 12px;
     bottom: 0;
 
     display: block;
 
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     margin: auto;
 
     content: '';
     transform: rotate(-45deg);
 
-    border-bottom: 2px solid #bbb;
-    border-left: 2px solid #bbb;
+    border-bottom: 2px solid #575B78;
+    border-left: 2px solid #575B78;
 }
 
 .form .nice-select .list
@@ -2444,8 +2449,14 @@ header .btn
     border-radius: 8px;
     padding: 5px 10px;
     display: inline-block;
+    transition: 0.3s;
 }
 
+.companies_item-action a:hover{
+    color: #fff;
+    border-color: #63a0ff;
+    background: #63a0ff;
+}
 
 
 
@@ -2693,6 +2704,9 @@ header .btn
     display: flex;
     justify-content: space-between;
 }
+
+
+
 .price-link a{
     text-decoration: none;
     font-weight: 500;
@@ -2727,6 +2741,9 @@ header .btn
 .balance_replenishment .form .field .pay_btn {
     width: 119px;
     margin-left: 13px;
+}
+.balance_replenishment .form .field .balance_btn {
+    width: 192px;
 }
 .balance_replenishment .form .exp
 {
@@ -2839,7 +2856,7 @@ header .btn
     color: #555976;
     font-size: 12px;
     line-height: 49px;
-
+    font-weight: 500;
     position: relative;
 
     display: block;
@@ -3017,14 +3034,17 @@ header .btn
     height: 55px;
     font-size: 14px;
     line-height: 33px;
-    color: #B2B6BF;
+    color: #000;
     box-shadow: 0px 3px 31px rgba(148, 155, 195, 0.153327);
     border-radius: 28px;
     padding: 11px 16px 11px 20px;
     position: relative;
+        overflow: hidden;
     border: none;
 }
-
+.dialog .add_message .form textarea:focus{
+    border: 1px solid #0C59D1;
+}
 
 /*------------------
     Company info
@@ -4216,6 +4236,96 @@ header .btn
     letter-spacing: -.2px;
     text-transform: uppercase;
 }
+.company_info .fields {
+    padding: 20px 48px 30px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 31px rgba(148, 155, 195, 0.153327);
+    border-radius: 20px;
+}
+
+.fields-tagline,
+.fields-taglinks{
+    margin-bottom: 15px;
+}
+.fields-tagline_text,
+.fields-taglink,
+.fields-texts_text {
+    display: flex;    
+    flex-wrap: wrap;
+}
+.fields-tagline_title,
+.fields-tagline_title,
+.fields-texts_title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;    
+    color: #8182B0;
+    margin-bottom: 9px;
+}
+.fields-tagline_text div {
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #85859C;
+    background: #EBEDF9;
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.fields-tagline_text div:last-child {
+    margin-right: 0px;
+}
+.fields-tagline_text-big {
+    background: #EBEDF9;
+    border-radius: 16px;  
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #85859C;
+    max-width: 284px;
+}
+.fields-taglink a {
+    background: linear-gradient(225deg, #2084FF 0%, #0052D4 100%);
+    border-radius: 16px;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #FFFFFF;    
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.fields-taglink a:last-child {
+    margin-right: 0px;
+}
+.fields-texts_text div {
+    border: 1px solid #EBEDF9;
+    border-radius: 16px; 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #85859C;
+    padding: 6px 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.fields-texts_text div:last-child {
+    margin-right: 0px;
+}
+.fields-texts_text-big {
+    border: 1.25926px solid #EBEDF9;
+    border-radius: 16px;  
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #85859C;
+    max-width: 284px;
+}
+
 
 
 
@@ -4360,27 +4470,31 @@ header .btn
 .tabs button
 {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 22px;
 
     display: block;
-
-    padding: 0 10px;
-
+    height: 30px;
+    background: #EBEDF9;
     transition: background .2s linear;
-
-    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A4A4B3;
+    padding: 6px 12px;
+    border-radius: 16px;
 }
 
-.tabs button + button
-{
-    margin-left: 10px;
+.tabs button, .tabs button + button {
+    margin-bottom: 8px;
+    margin-left: 8px;
 }
 
 .tabs button:hover,
 .tabs button.active
 {
-    background: #e6e6e6;
+    color: #fff;
+    background: linear-gradient(225deg, #2084FF 0%, #0052D4 100%);
 }
 
 
